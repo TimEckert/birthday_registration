@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  text-align: center;
+  font-family: $main-font;
+  color: $main-color;
+}
+
+header {
+  margin-top: 5%;
+  font-family: $header-font;
+}
+
+#intro {
+  font-family: $header-font;
+}
+
+#tooltip {
+  display: none;
+}

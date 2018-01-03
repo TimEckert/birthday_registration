@@ -1,0 +1,16 @@
+/* fonts */
+/* colors */
+body {
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  color: #0a0e22; }
+
+header {
+  margin-top: 5%;
+  font-family: "Playfair Display", serif; }
+
+#intro {
+  font-family: "Playfair Display", serif; }
+
+#tooltip {
+  display: none; }
