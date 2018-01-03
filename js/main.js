@@ -1,4 +1,4 @@
 
-$("#btn_tooltip").click(function() {
-  console.log("Test");
+$(document).ready(function() {
+  document.getElementById('tooltip').style.display = "none";
 });
