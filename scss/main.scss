@@ -15,3 +15,7 @@ header {
 #intro {
   font-family: $header-font;
 }
+
+#tooltip {
+  display: none; //On load it shouldn't be visible.
+}
