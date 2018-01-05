@@ -22,10 +22,14 @@
       </section>
 
       <section id="password">
-        <label for="password">Enter the password to announce your presence for the festivities.</label>
-        <input type="password" name="password">
-        <button type="submit" name="submit">I entered the password</button>
-        <button id="btn_tooltip" onclick="DontHavePassword()" type="button" name="tooltip">I don't have a password</button>
+        <form>
+
+          <label for="password">Enter the password to announce your presence for the festivities.</label>
+          <input id="passwordInput" type="password" name="password">
+          <button onclick="PasswordCheck()" type="button" name="submit">I entered the password</button>
+          <button id="btn_tooltip" onclick="DontHavePassword()" type="button" name="tooltip">I don't have a password</button>
+
+        </form>
       </section>
 
       <section id="tooltip">

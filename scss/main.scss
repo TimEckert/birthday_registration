@@ -19,3 +19,29 @@ header {
 #tooltip {
   display: none; //On load it shouldn't be visible.
 }
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 5fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-areas:
+  ". sm form ."
+  ". sm form ."
+  ". . form ."
+  "footer footer footer footer";
+  grid-gap: 20px;
+}
+
+#summary {
+  grid-area: sm;
+  background-color: blue;
+}
+
+#form {
+  grid-area: form;
+  background-color: grey;
+}
+
+footer {
+  grid-area: footer;
+}

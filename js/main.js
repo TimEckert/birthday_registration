@@ -15,6 +15,12 @@ function DontHavePassword ()
   }
   else if (timesClicked == 2)
       document.getElementById("tooltip").innerHTML = "<p>Gosh, just try <strong>anything</strong> really.</p>";
+}
 
+function PasswordCheck ()
+{
+  var input = document.getElementById("passwordInput").value.length;
 
+  if (input >= 2)
+        window.location.href = "reg.html";
 }
