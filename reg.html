@@ -6,7 +6,7 @@
     <title>Mr. Eckert's Birthday Invitation</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" charset="utf-8"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -18,12 +18,36 @@
     <div id="container">
 
     <main id="form">
-      Form
+      <form id="regForm" action="index.html" method="post">
+
+        <label for="name" class="singleline">What is your name participant?</label>
+        <input type="text" name="name">
+
+        <label class="singleline">Are you bringing someone with you?</label>
+        <input type="checkbox" name="plusOne" oninput=""><label for="plusOne"> +1</label>
+
+        <label class="singleline">Please state the value of your presents. <br><i>So we can inform the security company.</i></label>
+        <input type="checkbox" name="fifty"><label for="morefifty"> > 50</label>
+        <input type="checkbox" name="hundred"><label for="morefifty"> > 100</label>
+        <input type="checkbox" name="twohundred" checked><label for="morefifty"> > 200</label>
+        <input type="checkbox" name="fifehundred"><label for="morefife"> > 500</label>
+
+        <label class="singleline">Please state when do you want to ask for entrance.</label>
+        <input type="checkbox" name="afternoon"><label for="morefifty">Afternoon for coffee and cake</label>
+        <input type="checkbox" name="night"><label for="morefifty">At night for the party</label>
+        <input type="checkbox" name="both"><label for="morefifty">Both</label>
+
+        <button class="cta" type="submit" name="regSummit"></button>
+      </form>
     </main>
 
     <aside id="summary">
       Summary
     </aside>
+
+    <footer>
+
+    </footer>
 
     </div>
 

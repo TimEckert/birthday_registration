@@ -6,7 +6,7 @@
     <title>Mr. Eckert's Birthday Invitation</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" charset="utf-8"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -26,7 +26,7 @@
 
           <label for="password">Enter the password to announce your presence for the festivities.</label>
           <input id="passwordInput" type="password" name="password">
-          <button onclick="PasswordCheck()" type="button" name="submit">I entered the password</button>
+          <button class="cta" onclick="PasswordCheck()" type="button">I entered the password</button>
           <button id="btn_tooltip" onclick="DontHavePassword()" type="button" name="tooltip">I don't have a password</button>
 
         </form>

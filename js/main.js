@@ -1,26 +1,35 @@
+// ----- Variables -----
 var timesClicked = 0;
 
+// ----- Password Page -----
 function DontHavePassword ()
 {
   if (timesClicked == 0)
   {
-    document.getElementById("tooltip").style.display = "block";
-    document.getElementById("btn_tooltip").innerHTML = "I still don't have a clue";
+    $("#tooltip").css('display', 'block');;
+    $("#btn_tooltip").html ("I still don't have a clue");
     timesClicked++;
   }
   else if (timesClicked == 1)
   {
-    document.getElementById("tooltip").innerHTML = "<p>Gosh, just try anything really.</p>";
+    $("#tooltip").html ("<p>Gosh, just try anything really.</p>");
     timesClicked++;
   }
   else if (timesClicked == 2)
-      document.getElementById("tooltip").innerHTML = "<p>Gosh, just try <strong>anything</strong> really.</p>";
+    $("#tooltip").html ("<p>Gosh, just try <strong>anything</strong> really.</p>");
 }
 
 function PasswordCheck ()
 {
-  var input = document.getElementById("passwordInput").value.length;
+  var input = $("#passwordInput").val().length;
 
   if (input >= 2)
         window.location.href = "reg.html";
 }
+
+// ----- Registration Page -----
+// $(".checkbox").change(function() {
+//     if(this.checked) {
+//         //Do stuff
+//     }
+// });

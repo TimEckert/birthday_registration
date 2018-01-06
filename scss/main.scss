@@ -35,11 +35,19 @@ header {
 #summary {
   grid-area: sm;
   background-color: blue;
+
+  position: sticky;
+  top: 20px;
 }
 
 #form {
   grid-area: form;
   background-color: grey;
+
+  .singleline {
+    margin-top: 150px;
+    display: block;
+  }
 }
 
 footer {
