@@ -4,6 +4,7 @@
 
     <meta charset="utf-8">
     <title>Mr. Eckert's Birthday Invitation</title>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Playfair+Display|Schoolbell" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js" charset="utf-8"></script>
@@ -19,16 +20,16 @@
     <main>
 
       <section id="intro">
-        <h1>Congratulations, you have the honour to celebrate an individual most precious to you</h1>
+        <h1>Congratulations, you have the honour<br> to celebrate an individual most precious to you</h1>
       </section>
 
       <section id="password">
         <form>
 
-          <label for="password">Enter the password to announce your presence for the festivities.</label>
-          <input id="passwordInput" type="password" name="password">
-          <button class="cta" onclick="PasswordCheck()" type="button">I entered the password</button>
-          <button id="btn_tooltip" onclick="DontHavePassword()" type="button" name="tooltip">I don't have a password</button>
+          <label for="password">Enter the password to announce your presence for the festivities<br></label>
+          <input id="passwordInput" type="password" name="password"><br>
+          <button class="cta cta-primary" onclick="PasswordCheck()" type="button">I entered the password</button><br>
+          <button id="btn_tooltip" class="cta cta-secondary" onclick="DontHavePassword()" type="button" name="tooltip">I don't have a password</button>
 
         </form>
       </section>

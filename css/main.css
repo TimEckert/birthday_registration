@@ -9,25 +9,44 @@ header {
   margin-top: 5%;
   font-family: "Playfair Display", serif; }
 
+aside {
+  grid-area: sm;
+  padding: 15px 30px;
+  position: sticky;
+  top: 10px;
+  font-family: "Schoolbell", cursive;
+  font-size: 150%;
+  text-align: left;
+  border: 2px solid #0a0e22;
+  border-radius: 5px; }
+
+#passwordInput {
+  width: 30%;
+  height: 30px;
+  font-size: 120%; }
+
 #intro {
-  font-family: "Playfair Display", serif; }
+  margin: 100px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 200%; }
 
 #tooltip {
-  display: none; }
+  margin: 0 auto;
+  width: 40%;
+  display: none;
+  text-align: left;
+  border: 2px solid #0a0e22;
+  border-radius: 5px;
+  padding: 0 30px;
+  margin-top: 20px; }
 
 #container {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 5fr 6fr 1fr;
   grid-auto-rows: minmax(200px, auto);
   grid-template-areas: ". sm form ." ". sm form ." ". . form ." "footer footer footer footer";
   grid-gap: 20px; }
-
-#summary {
-  grid-area: sm;
-  border: 2px solid #0a0e22;
-  border-radius: 5px;
-  position: sticky;
-  top: 20px; }
 
 #form {
   grid-area: form;
@@ -38,7 +57,29 @@ header {
       margin-top: 150px; }
 
 #responseText p {
-  display: none; }
+  display: none;
+  font-family: "Schoolbell", cursive; }
 
 footer {
   grid-area: footer; }
+
+.cta {
+  margin: 5px;
+  padding: 20px 30px;
+  font-size: 90%;
+  font-weight: bold;
+  border: 2px solid #0a0e22;
+  border-radius: 5px; }
+  .cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); }
+  .cta:active {
+    transform: translateY(1px);
+    box-shadow: none; }
+  .cta:focus {
+    outline: 0; }
+
+.cta-primary {
+  margin-top: 40px;
+  color: white;
+  background-color: #0a0e22; }

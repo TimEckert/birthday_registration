@@ -4,6 +4,7 @@
 
     <meta charset="utf-8">
     <title>Mr. Eckert's Birthday Invitation</title>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Playfair+Display|Schoolbell" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js" charset="utf-8"></script>
@@ -19,7 +20,7 @@
     <div id="container">
 
     <main id="form">
-      <form id="regForm" action="index.html" method="post">
+      <form id="regForm" action="#" method="post">
 
         <!-- Name -->
         <label for="name" class="singleline">What is your name participant?</label>
@@ -31,30 +32,30 @@
 
         <!-- Presents Value -->
         <label class="singleline">Please state the value of your presents. <br><i>So we can inform the security company.</i></label>
-        <input type="checkbox" name="fifty"       onchange="CheckboxEvent(2)"><label for="fifty"> > 50</label>
-        <input type="checkbox" name="hundred"     onchange="CheckboxEvent(3)"><label for="hundred"> > 100</label>
-        <input type="checkbox" name="twohundred"  onchange="CheckboxEvent(4)"><label for="twohundred"> > 200</label>
-        <input type="checkbox" name="fifehundred" onchange="CheckboxEvent(5)"><label for="fifehundred"> > 500</label>
+        <input type="radio" name="presents" value="fifty"       onchange="CheckboxEvent(2)"><label for="fifty"> > 50</label>
+        <input type="radio" name="presents" value="hundred"     onchange="CheckboxEvent(3)"><label for="hundred"> > 100</label>
+        <input type="radio" name="presents" value="twohundred"  onchange="CheckboxEvent(4)"><label for="twohundred"> > 200</label>
+        <input type="radio" name="presents" value="fifehundred" onchange="CheckboxEvent(5)"><label for="fifehundred"> > 500</label>
 
         <!-- Time -->
         <label class="singleline">Please state when do you want to ask for entrance.</label>
-        <input type="checkbox" name="afternoon" onchange="CheckboxEvent(6)"><label for="afternoon">Afternoon for coffee and cake</label>
-        <input type="checkbox" name="night"     onchange="CheckboxEvent(7)"><label for="night">At night for the party</label>
-        <input type="checkbox" name="both"      onchange="CheckboxEvent(8)"><label for="both">Both</label>
+        <input type="radio" name="time" value="afternoon" onchange="CheckboxEvent(6)"><label for="afternoon">Afternoon for coffee and cake</label>
+        <input type="radio" name="time" value="night"     onchange="CheckboxEvent(7)"><label for="night">At night for the party</label>
+        <input type="radio" name="time" value="both"      onchange="CheckboxEvent(8)"><label for="both">Both</label>
 
-        <button class="cta singleline" type="submit" name="regSummit">Please Submit</button>
+        <button class="cta cta-primary singleline" type="submit" name="regSummit">Please Submit</button>
       </form>
     </main>
 
     <aside id="summary">
       <div id="responseText">
         <span>My dearest Tim,</span> <br>
-        <p id="response1">I, <span></span>, recieved your invitation with great pleasure.<br></p>
-        <p id="response2">Since I was always a more pleasurable person <span>in companyALONE, I will bring someoneNOONE</span> with me.<br>
-        <p id="response3">Also, because I am so happy that you are in my life, I bring a <span>creative, normal, generous, spectacular</span> present, to honour you.<br>
-        <p id="response4">Looking forward to meeting you <span>for a coffee, and take a dance, the whole day</span>.<br>
-        Uttermost respect and all yours,
-        <span id="signature" class="participantNameInput">Willy Wonker</span></p>
+        <p id="response1">I, <span>your friend</span>, recieved your invitation with great pleasure.<br></p>
+        <p id="response2">Since I was always a more pleasurable person <span>alone, I will bring noone</span> with me.<br>
+        <p id="response3">Also, because I am so happy that you are in my life, I bring a <span>nice</span> present, to honour you.<br>
+        <p id="response4">Looking forward to meeting you <span>finally</span>.<br>
+        Uttermost respect and all yours,<br>
+        <span id="signature">your friend</span></p>
       </div>
 
     </aside>
