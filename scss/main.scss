@@ -67,7 +67,32 @@ aside {
 
 #form {
   grid-area: form;
-  background-color: grey;
+  padding: 20px 30px;
+  background-color: white;
+  font-size: 120%;
+  @include border;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label:before {
+    background-color: white;
+    @include border;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    line-height: 16px;
+    margin: -2px 6px 0 0;
+    vertical-align: middle;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    content: "\2713";
+  }
+
 
   .singleline {
     display: block;
