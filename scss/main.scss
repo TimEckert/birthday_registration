@@ -72,6 +72,24 @@ aside {
   font-size: 120%;
   @include border;
 
+  label {
+    margin-right: 20px;
+  }
+
+  // ----- Name -----
+  input[type="text"] {
+    height: 28px;
+    width: 300px;
+    padding: 5px;
+    border: 1px solid $main-color;
+    border-radius: $border-rad;
+    font-family: $writing-font;
+    font-size: 120%;
+
+  }
+  // ----- / -----
+
+  // ----- +1 -----
   input[type="checkbox"] {
     display: none;
   }
@@ -81,8 +99,8 @@ aside {
     @include border;
     content: "";
     display: inline-block;
-    height: 16px;
-    width: 16px;
+    height: 18px;
+    width: 18px;
     text-align: center;
     line-height: 16px;
     margin: -2px 6px 0 0;
@@ -90,9 +108,33 @@ aside {
   }
 
   input[type="checkbox"]:checked + label:before {
-    content: "\2713";
+    content: "\2714";
   }
+// ----- / -----
 
+// ----- Radios -----
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label:before {
+  background-color: white;
+  @include border;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+  line-height: 16px;
+  margin: -2px 6px 0 0;
+  vertical-align: middle;
+}
+
+input[type="radio"]:checked + label:before {
+  content: "\25CF";
+}
+// ----- / -----
 
   .singleline {
     display: block;
@@ -100,6 +142,10 @@ aside {
     &:not(:first-child) {
       margin-top: 150px;
     }
+  }
+
+  button {
+    margin:auto;
   }
 }
 
