@@ -25,7 +25,7 @@ function PasswordCheck ()
   var input = $("#passwordInput").val().length;
 
   if (input >= 2)
-        window.location.href = "reg.html";
+        window.location.href = "reg.php";
 }
 
 // ----- Registration Page -----
